@@ -24,13 +24,13 @@ To use this repo:
         (1) cd into "n8013" and open terminal window
         (2) open file "build-n8013.sh" and edit line 15,
             replace my username with your own and save the file
-        (3) enter "./build-n8013.sh" and press enter
+        (3) in terminal window enter "./build-n8013.sh" and press enter
         (4) after the kernel builds the zip package will be in the "Packages" Folder
 ====================================================================================
 
     {x} NEXUS 7
         (1) cd into "grouper" and open terminal window
-        (2) enter "./BBK.sh" and press enter
+        (2) in terminal window enter "./BBK.sh" and press enter
         (3) after the kernel builds the zip package will be in the "Out" folder
 ===============================================================================
 
