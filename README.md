@@ -1,4 +1,4 @@
-DEMENTED Kernel Manifest:
+DEMENTED Kernel Factory:
 =========================
 
 This manifest will sync all my kernels that build flashable zips and the corresponding toolchain into one kernel build directory
@@ -7,7 +7,7 @@ Kernels Supported:
 
     {x} GT-N8013
     {x} NEXUS 7
-    {x} (coming soon - S4)
+    {x} (coming soon - GALAXY S4)
 
 To use this repo:
 =================
