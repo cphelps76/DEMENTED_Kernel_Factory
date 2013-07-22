@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
+  <remote  name="cphelps76"
+           fetch="git://github.com/cphelps76/" />
+  <default revision="refs/tags/android-4.2.2_r1.2"
+           remote="aosp"
+           sync-j="4" />
+
+  <!-- First lets add the toolchains -->
+  <project path="arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" />
+  <project path="arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="linux,arm" revision="master" />
+  <project path="linaro" name="Linaro_47x_toolchain" remote="cphelps76" revision="master" />
+
+  <!-- Now we need the Kernels -->
+  <project path="grouper" name="DEMENTED_kernel_grouper" remote="cphelps76" revision="db42" />
+  <project path="jf" name="DEMENTED_kernel_jf" remote="cphelps76" revision="db42" />
+  <project path="n8013" name="DEMENTED_kernel_smdk4412" remote="cphelps76" revision="db42" />
+
+</manifest>
