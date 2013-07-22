@@ -10,6 +10,8 @@
            remote="aosp"
            sync-j="4" />
 
+  <copyfile src="DEMENTED_Kernel_Factorty/README.md" remote="cphelps76" revision="db42" dest="README.md" />
+
   <!-- First lets add the toolchains -->
   <project path="arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" />
   <project path="arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="linux,arm" revision="master" />
