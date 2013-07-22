@@ -33,6 +33,5 @@ To use this repo:
 
     {x} GALAXY S4
         <<<< COMING SOON >>>>
-=============================
 
 (4) To clean the kernel directories after a build enter "make mrproper" in the terminal window while still in the kernel folder"
