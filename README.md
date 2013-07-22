@@ -22,7 +22,8 @@ To use this repo:
 
     {x} GT-N8013
         (1) cd into "n8013" and open terminal window
-        (2) open file "build-n8013.sh" and edit line 15, replace my username with your own and save the file
+        (2) open file "build-n8013.sh" and edit line 15,
+            replace my username with your own and save the file
         (3) enter "./build-n8013.sh" and press enter
         (4) after the kernel builds the zip package will be in the "Packages" Folder
 ====================================================================================
