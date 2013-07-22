@@ -10,7 +10,9 @@
            remote="aosp"
            sync-j="4" />
 
-  <copyfile src="DEMENTED_Kernel_Factory/README.md" remote="cphelps76" revision="db42" dest="README.md" />
+  <project path=".DEMENTED" name="DEMENTED_Kernel_Factory" remote="cphelps76" revision="db42" >
+    <copyfile src="README.md" dest="README.md" />
+  </project>
 
   <!-- First lets add the toolchains -->
   <project path="arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" />
