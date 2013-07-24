@@ -1,7 +1,7 @@
 DEMENTED Kernel Factory:
 =========================
 
-This manifest will sync all my kernels that build flashable zips and the corresponding toolchain into one kernel build directory
+Kernel building user interface
 
 ================================================================================================================================
 
@@ -40,6 +40,8 @@ To use this repo:
           will clean all kernel directories
         Option 5:
           will remove all kernel zip packages from the out folder
+        Option 6:
+          will completely wipe the build drectory and resync the repo's
         Option "x":
           will exit the build system
 =================================================================
