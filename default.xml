@@ -9,12 +9,8 @@
 
   <!-- First lets copy the toolchains, tools, README, and the build script -->
   <project path=".DEMENTED" name="DEMENTED_Kernel_Factory" >
-    <copyfile src="arm-eabi-4.6" dest="arm-eabi-4.6" />
-    <copyfile src="arm-eabi-4.7" dest="arm-eabi-4.7" />
     <copyfile src="DEMENTED.sh" dest="DEMENTED.sh" />
-    <copyfile src="linaro" dest="linaro" />
     <copyfile src="README.md" dest="README.md" />
-    <copyfile src="tools" dest="tools" />
   </project>
 
   <!-- Now we need the Kernels -->

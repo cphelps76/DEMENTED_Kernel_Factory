@@ -19,17 +19,19 @@ do
   echo ""
   echo ""
   echo ""
-  echo "   Welcome to the DEMENTED Kernel Factory"
-  echo "   Make your selection from the list below"
+  echo "  Welcome to the DEMENTED Kernel Factory"
+  echo "  Make your selection from the list below"
   echo ""
   echo ""
-  echo "  {x}...1 - DEMENTED Kernel Grouper..."
+  echo "  {x}...1 - Prepare the Build System..."
   echo ""
-  echo "  {x}...2 - DEMENTED Kernel GT-N8013..."
+  echo "  {x}...2 - Build DEMENTED Kernel Grouper..."
   echo ""
-  echo "  {x}...3 - Clean the Kernel Directories..."
+  echo "  {x}...3 - Build DEMENTED Kernel GT-N8013..."
+  echo ""
+  echo "  {x}...4 - Clean the Kernel Directories..."
   echo "" 
-  echo "  {x}...4 - Clean the Out Folder..."
+  echo "  {x}...5 - Clean the Out Folder..."
   echo ""
   echo "  {x}...x - Exit..."
   echo 
@@ -39,10 +41,11 @@ do
   if [ "$?" != "1" ]
   then
     case $opt in
-      1) sh tools/grouper.sh; echo "Check the Out folder for your new kernel package";;
-      2) sh tools/n8013.sh; echo "Check the Out folder for your new kernel package";;     
-      3) sh tools/cleanKernel.sh; echo "Done";;
-      4) sh tools/cleanOut.sh; echo "Done";;
+      1) sh .DEMENTED/tools/setup.sh; echo "The build system is ready for abuse";;
+      2) sh tools/grouper.sh; echo "Check the Out folder for your new kernel package";;
+      3) sh tools/n8013.sh; echo "Check the Out folder for your new kernel package";;     
+      4) sh tools/cleanKernel.sh; echo "Done";;
+      5) sh tools/cleanOut.sh; echo "Done";;
       x) clear; echo; echo "#ROCKOUT"; echo; exit 1;;
       *) echo "You FUCKED UP, Try Again"; sleep 1; continue;;
     esac
