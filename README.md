@@ -20,19 +20,21 @@ To use this repo:
 
 (3) To build the kernels:
 
-    {x} GT-N8013
-        (1) cd into "n8013" and open terminal window
-        (2) in terminal window enter "./build-n8013.sh" and press enter
-        (3) after the kernel builds the zip package will be in the "Packages" Folder
-====================================================================================
+    {x} Open a terminal window in the "kernel" directory and enter:
+        ./DEMENTED.sh
+===================================================================
 
-    {x} NEXUS 7
-        (1) cd into "grouper" and open terminal window
-        (2) in terminal window enter "./BBK.sh" and press enter
-        (3) after the kernel builds the zip package will be in the "Out" folder
-===============================================================================
+    {x} Make a selection from the list that is shown in the terminal window
+        Options 1 and 2:
+          will create the proper folders for the kernels
+          build the kernels, and move the final zip package into the proper out folder
+        Option 3:
+          will clean all kernel directories
+        Option 4:
+          will remove all kernel zip packages from the out folder
+        Option "x":
+          will exit the build system
+=================================================================
 
-    {x} GALAXY S4
-        <<<< COMING SOON >>>>
-
-(4) To clean the kernel directories after a build enter "make mrproper" in the terminal window while still in the kernel folder
+    {x} Copy your new kernel to your SD Card and flash in recovery 
+==================================================================
