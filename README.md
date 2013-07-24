@@ -2,6 +2,7 @@ DEMENTED Kernel Factory:
 =========================
 
 This manifest will sync all my kernels that build flashable zips and the corresponding toolchain into one kernel build directory
+
 ================================================================================================================================
 
 Kernels Supported:
