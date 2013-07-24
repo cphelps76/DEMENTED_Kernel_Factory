@@ -17,6 +17,8 @@ To use this repo:
 
 (1) Create a directory on your computer in the root directory called "kernel" and navigate into it
 
+==================================================================================================
+
 (2) Open a terminal window in the "kernel" directory and enter:
 
     repo init -u git://github.com/cphelps76/DEMENTED_kernel_manifest.git -b db42
