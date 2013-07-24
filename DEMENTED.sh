@@ -49,7 +49,7 @@ do
       3) sh tools/n8013.sh; echo "Check the Out folder for your new kernel package";;     
       4) sh tools/cleanKernel.sh; echo "Done";;
       5) sh tools/cleanOut.sh; echo "Done";;
-      5) sh tools/cleanSync.sh; echo "Entire build directory wiped and resync'd, run Setup again";;
+      6) sh tools/cleanSync.sh; echo "Entire build directory wiped and resync'd, run Setup again";;
       x) clear; echo; echo "#ROCKOUT"; echo; exit 1;;
       *) echo "You FUCKED UP, Try Again"; sleep 1; continue;;
     esac
