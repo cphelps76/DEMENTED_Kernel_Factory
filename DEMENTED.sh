@@ -23,7 +23,7 @@ do
   echo "  Make your selection from the list below"
   echo ""
   echo ""
-  echo "  {x}...1 - Prepare the Build System..."
+  echo "  {x}...1 - Setup the Build System..."
   echo ""
   echo "  {x}...2 - Build DEMENTED Kernel Grouper..."
   echo ""
@@ -32,6 +32,9 @@ do
   echo "  {x}...4 - Clean the Kernel Directories..."
   echo "" 
   echo "  {x}...5 - Clean the Out Folder..."
+  echo ""
+  echo "  {x}...6 - Wipe and Resync..."
+  echo "            *** Any unsaved work WILL be lost ***"
   echo ""
   echo "  {x}...x - Exit..."
   echo 
@@ -46,6 +49,7 @@ do
       3) sh tools/n8013.sh; echo "Check the Out folder for your new kernel package";;     
       4) sh tools/cleanKernel.sh; echo "Done";;
       5) sh tools/cleanOut.sh; echo "Done";;
+      5) sh tools/cleanSync.sh; echo "Entire build directory wiped and resync'd, run Setup again";;
       x) clear; echo; echo "#ROCKOUT"; echo; exit 1;;
       *) echo "You FUCKED UP, Try Again"; sleep 1; continue;;
     esac
