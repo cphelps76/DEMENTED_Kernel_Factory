@@ -37,10 +37,14 @@ To use this repo:
           will create the proper folders for the kernels
           build the kernels, and move the final zip package into the proper out folder
         Option 4:
-          will clean all kernel directories
+          will build all kernels
         Option 5:
-          will remove all kernel zip packages from the out folder
+          will clean all kernel directories
         Option 6:
+          will remove all kernel zip packages from the out folder
+        Option 7:
+          will reset the kernel repos using git reset --hard
+        Option 8:
           will completely wipe the build drectory and resync the repo's
         Option "x":
           will exit the build system

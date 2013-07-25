@@ -31,7 +31,7 @@ do
   echo ""
   echo "  {x}...4 - Build All Kernels..."
   echo ""
-  echo "  {x}...5 - Run make mrproper..."
+  echo "  {x}...5 - Clean the Kernels..."
   echo "" 
   echo "  {x}...6 - Wipe the Out Folder..."
   echo ""
