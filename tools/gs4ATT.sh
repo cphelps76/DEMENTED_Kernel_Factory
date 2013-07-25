@@ -25,4 +25,6 @@
   echo ""
   cd $kjf
      ./factory-att.sh
+     make clean
+     make mrproper 
      cd $k

@@ -25,4 +25,6 @@
   echo ""
   cd $kn
      ./factory.sh
+     make clean
+     make mrproper
      cd $k

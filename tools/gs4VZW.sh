@@ -25,4 +25,6 @@
   echo ""
   cd $kjf
      ./factory-vzw.sh
+     make clean
+     make mrproper
      cd $k

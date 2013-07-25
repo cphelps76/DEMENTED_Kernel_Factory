@@ -32,6 +32,8 @@
   echo ""
   cd $kg
      ./factory.sh
+     make clean
+     make mrproper
      cd $k
 
 # GT-N8013
@@ -52,6 +54,8 @@
   echo ""
   cd $kn
      ./factory.sh
+     make clean
+     make mrproper
      cd $k
 
 # GS4 AT&T
@@ -72,6 +76,9 @@
   echo ""
   cd $kjf
      ./factory-att.sh
+     rm -rf $kjf/arch/arm/boot/compressed/ashldi3.S
+     make clean
+     make mrproper
      cd $k
 
 # GS4 Tmobile
@@ -92,6 +99,9 @@
   echo ""
   cd $kjf
      ./factory-tmo.sh
+     rm -rf $kjf/arch/arm/boot/compressed/ashldi3.S
+     make clean
+     make mrproper
      cd $k
 
 # GS4 Verizon
@@ -112,4 +122,7 @@
   echo ""
   cd $kjf
      ./factory-vzw.sh
+     rm -rf $kjf/arch/arm/boot/compressed/ashldi3.S
+     make clean
+     make mrproper
      cd $k
