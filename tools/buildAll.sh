@@ -6,6 +6,8 @@
   kg=~/kernel/grouper
 # Path for GT-N8013 Kernel
   kn=~/kernel/n8013
+# Path for GS4 Kernel
+  kjf=~/kernel/jf
 # Path for out folder
   out=~/kernel/out
 
@@ -50,4 +52,64 @@
   echo ""
   cd $kn
      ./factory.sh
+     cd $k
+
+# GS4 AT&T
+  echo ""
+  echo ""
+  echo "<<< DEMENTED Kernel GS4 AT&T >>>"
+  echo "Kernel Version: 3.4.0"
+  echo "Built with Linaro 4.7"
+  echo ""
+
+# Make the JFATT folder in Out Folder
+  echo "Creating the JFATT folder in out directory"
+  echo ""
+  mkdir $out/JFATT
+
+# Build the Kernel
+  echo "Buckle up Bitches...Let's do this"
+  echo ""
+  cd $kjf
+     ./factory-att.sh
+     cd $k
+
+# GS4 Tmobile
+  echo ""
+  echo ""
+  echo "<<< DEMENTED Kernel GS4 Tmobile >>>"
+  echo "Kernel Version: 3.4.0"
+  echo "Built with Linaro 4.7"
+  echo ""
+
+# Make the JFTMO folder in Out Folder
+  echo "Creating the JFTMO folder in out directory"
+  echo ""
+  mkdir $out/JFTMO
+
+# Build the Kernel
+  echo "Buckle up Bitches...Let's do this"
+  echo ""
+  cd $kjf
+     ./factory-tmo.sh
+     cd $k
+
+# GS4 Verizon
+  echo ""
+  echo ""
+  echo "<<< DEMENTED Kernel GS4 Verizon >>>"
+  echo "Kernel Version: 3.4.0"
+  echo "Built with Linaro 4.7"
+  echo ""
+
+# Make the JFVZW folder in Out Folder
+  echo "Creating the JFVZW folder in out directory"
+  echo ""
+  mkdir $out/JFVZW
+
+# Build the Kernel
+  echo "Buckle up Bitches...Let's do this"
+  echo ""
+  cd $kjf
+     ./factory-vzw.sh
      cd $k

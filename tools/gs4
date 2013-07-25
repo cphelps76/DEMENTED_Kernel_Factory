@@ -1,0 +1,56 @@
+#!/bin/sh
+#
+# Menu for DEMENTED S4 Kernels
+
+chmod -R +x tools
+PATH=tools:$PATH
+
+while :
+do
+
+  clear
+  echo 
+  echo " ___ _____ __  __  _____ _   _ _____ _____ ___  "
+  echo "| _ \  ___|  \/  ||  ___| \ | |_   _|  ___| _ \ "
+  echo "|| || |__ | .  . || |__ |  \| | | | | |__ || || "  
+  echo "|| ||  __|| |\/| ||  __|| . | | | | |  __||| || "  
+  echo "||//| |___| |  | || |___| |\  | | | | |___||//  "
+  echo "|_/ \____/\_|  |_/\____/\_| \_/ \_/ \____/|_/   "
+  echo ""
+  echo ""
+  echo ""
+  echo "  <<< DEMENTED Galaxy S4 Kernel Menu >>>"
+  echo "  DEMENTEDKernel currently supports:"
+  echo ""
+  echo "  JFLTEATT"
+  echo "  JFLTETMO"
+  echo "  JFLTEVZW"
+  echo ""
+  echo "  Choose a kernel from the list below"
+  echo ""
+  echo ""
+  echo "  {x}...1 - DEMENTEDKernel-JFATT..."
+  echo ""
+  echo "  {x}...2 - DEMENTEDKernel-JFTMO..."
+  echo ""
+  echo "  {x}...3 - DEMENTEDKernel-JFVZW..."
+  echo ""
+  echo "  {x}...x - Exit to previous screen..."
+  echo 
+  echo -n "Enter selection: "
+  read opt
+  
+  if [ "$?" != "1" ]
+  then
+    case $opt in
+      1) sh tools/gs4ATT.sh; echo "Check the out folder for your new kernel package";;
+      2) sh tools/gs4TMO.sh; echo "Check the out folder for your new kernel package";;
+      3) sh tools/gs4VZW.sh; echo "Check the out folder for your new kernel package";;
+      x) clear; exit 1;;
+      *) echo "You FUCKED UP, Try Again"; sleep 1; continue;;
+    esac
+  fi
+
+  tools/press_enter
+
+done
